@@ -1,0 +1,537 @@
+@import url('https://fonts.google.com/specimen/National+Park');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'National Park', sans-serif;
+    text-align: start;
+    scroll-behavior: smooth;
+    background: #1b2b2d;
+    color: #ffffff;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+  background: url(images/image4.png) no-repeat center center  fixed;
+}
+/* Navbar Section */
+.first-class{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.navbar {
+  background: #2c2f36;
+  backdrop-filter: blur(10px);
+  padding: 1rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 20px #0000001a;
+}
+
+.nav-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #03cfd6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #03cfd6;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Home Section */
+.home {
+  flex-grow: 2;
+  text-align: center;
+  height: 100vh;
+  padding-left: 80px;
+}
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 26rem;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.typed-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #fff;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+/* About Section */
+.about{
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+  direction: underline #03cfd6;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #03cfd6;
+  margin: 10px auto 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-column {
+  flex: 1 1 60%;
+}
+
+.right-column {
+  flex: 1 1 35%;
+}
+
+.left-column h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.left-column .name1 {
+  color: #03cfd6;
+}
+
+.left-column p {
+  color: #fff;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.right-column ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.right-column li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-bottom: 1px solid #0b6d71;
+  padding-bottom: 10px;
+}
+
+.right-column strong {
+  width: 100px;
+  display: inline-block;
+}
+
+.email {
+  color: #03cfd6;
+}
+
+/* Skills Section */
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+.skills h2{
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.skills-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.skills-box :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.skills-list {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px;
+  background-color: #2c2f36;
+  border: 1px solid #03cfd6;
+}
+.skills-list h4{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #03cfd6;
+}
+.skills-list li {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.skills-list li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #03cfd6 0%, #00ffe7 100%);
+  border-radius: 2px;
+  transition: width 0.3s;
+  margin: 4px auto 0;
+}
+.skills-list li:hover {
+  color: #03cfd6;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.skills-list li:hover::after {
+  width: 80%;
+}
+
+/* Education Section and Experience Section */
+.education{
+   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+.education h2{
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.education-blocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: inherit;
+}
+.education-blocks :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.edu1{
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 40px auto; 
+  background-color: #2c2f36;
+  border: 1px solid #03cfd6;
+}
+.edu1 h4 {
+  font-size: 1.8rem;
+  color: #03cfd6;
+  margin-bottom: 10px;
+}
+.edu1 p1 {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+  font-style: oblique;
+}
+.edu1 p{
+  margin-bottom: 10px;
+}
+.year {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  background-color: #03cfd6;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+section {
+  padding: 60px 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2c2f36;
+  border: 1px solid #03cfd6;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.card-list :hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px #00000033;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #03cfd6;
+}
+
+.card span {
+  display: block;
+  color: #bbb;
+  margin: 6px 0 10px;
+  font-style: oblique;
+}
+
+.card p {
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.pro {
+  display: inline-block;
+  background-color: #00000033;
+  border-color: #03cfd6;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.pro a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #03cfd6;
+  z-index: -1;
+  transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.pro:hover {
+  color: #2c2f36;
+}
+
+.pro:hover::before {
+  width: 100%;
+}
+
+/* Section Divider(The staright line which divides the section) */
+.section-divider {
+width: 100%;
+height: 2px;
+background-color: #444;
+margin: 60px 0;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background-color: inherit;
+}
+  
+#contact h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+  
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #03cfd6;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  background-color: inherit;
+  color: #fff;
+  border-color: #03cfd6;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+  z-index: 1;
+  transition: color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #03cfd6;
+  z-index: -1;
+  transition: width 0.4s cubic-bezier(0.4,0,0.2,1);
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #2c2f36;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #03cfd6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #03cfd6;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

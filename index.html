@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Personal Resume</title>
+</head>
+<body>
+    <div class="background">
+    <section class="first-class">
+      <nav class="navbar">
+        <div class="nav-brand">AEBM</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#project" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="home" id="home">
+        <div class="home1">
+                <h1>Arnold Eloi Buyange Muvunyi</h1>
+                <p>I’m a <span class="typed-text"></span><span class="cursor"></span></p>
+        </div>
+    </section>
+    </div>
+     
+    <section class="about" id="about">
+      <h2 class="title">About Me</h2>
+      
+      <div class="content">
+        <div class="left-column">
+          <h3>I'm <span class="name1">Arnold Eloi Buyange Muvunyi,</span></h3>
+            <p>
+                a passionate software engineering student at African Leadership University  
+                with a strong foundation in full-stack web development, problem solving, and building real-world projects. 
+                 I enjoy using code to solve meaningful problems and create smooth user experiences.</p>
+        </div>
+
+        <div class="right-column">
+          <ul>
+            <li><strong>Name:</strong> Arnold Eloi Buyange Muvunyi</li>
+            <li><strong>Email:</strong> <span class="email">a.buyangem@alustudent.com</span></li>
+            <li><strong>Age:</strong> 21</li>
+            <li><strong>From:</strong> Kigali, Rwanda</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="skills" id="skills">
+        <h2 class="title">My skills</h2>
+        <p>I have developed a strong technical foundation through coursework and hands-on projects. Below are the key programming languages, tools, and soft skills I bring to the table.</p>
+        <div class="skills-box">
+            <div class="skills-list">
+                <h4>Programming Languages & Web Development</h4>
+                <li> JavaScript</li>
+                <li>Python</li>
+                <li> HTML</li>
+                <li>CSS</li>
+            </div> 
+            <div class="skills-list">
+                <h4>Database Management & Tools</h4>   
+                <li>SQL</li>
+                <li>VS Code</li>  
+                <li>GitHub</li>
+            </div>
+            <div class="skills-list">
+                <h4>Design Tools & Soft Skills</h4>
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+            </div>
+            <div class="skills-list">
+                <h4>Other Skills</h4>
+                <li>Kinyarwanda</li>
+                <li>English</li>
+                <li>French</li>
+                <li>Basketball</li>
+                <li>Football</li>
+                <li>Volleyball</li>
+            </div>    
+        </div>    
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="education" id="education">  
+        <h2 class="title">Education</h2>
+        <div class="education-blocks">
+        <div class="edu1">
+            <h4>African Leadership University</h4>
+            <p1>Kigali, Rwanda</p1>
+            <p>BSc (Hons) in Software Engineering | Expected Graduation: 2026</p>
+            <p>Relevant Courses: Web Development, Data Structures, Software Design</p>
+            <p><span class="year">2024-2027</span></p>
+        </div>
+
+        <div class="edu1">
+            <h4>Ecole des Sciences Byimana</h4>
+            <p1> Ruhango, Rwanda</p1>
+            <p>Rwanda Advanced Certificate of Education</p>
+            <p>Relevant Courses: Mathematics, Chemistry, Biology</p>
+            <p><span class="year">2020-2023</span></p>
+        </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="experience" id="experience">
+    <h2 class="title">Experience</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>Software Engineer Student</h3>
+        <span>African Leadership University / 2024 - present</span>
+        <p>Currently pursuing Software Engineering degree at African Leadership University.</p>
+      </div>
+      <div class="card">
+        <h3>Selam Travel Solutions</h3>
+        <span>Sep 2024 – Present (Full-time)</span>
+        <p>Booking and issuing flight tickets.<br>Creating advertising content.</p>
+      </div>
+      <div class="card">
+        <h3>Groupe Scolaire Saint Paul MUKO</h3>
+        <span>Sep 2023 – Jul 2024 (Full-time)</span>
+        <p>Assistant Teacher in ICT.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="project">
+    <h2 class="title">Projects</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>Selam Holidays</h3>
+        <span>On Going Project / 2025</span>
+        <p>I am working on Selam Holidays website which will help people book both tours and flight tickets.</p>
+        <button class="pro"><a href="https://selamholidays.com/">View My Project</a></button>
+      </div>
+      <div class="card">
+        <h3>Logo Designs</h3>
+        <span>Vacation Vibes Travel & Tour Ltd</span>
+        <p>I designed the logo of this startup company called Vacation Vibe Travel & Tours Ltd.</p>
+        <button class="pro"><a href="https://www.canva.com/design/DAGmBMc5tgo/5MR0mu-zkeeXEe6oHcn-Lw/edit">View My Project</a></button>
+      </div>
+      <div class="card">
+        <h3>Class Time Projects</h3>
+        <span>African Leadership University / 2024 - 2027</span>
+        <p>These are small learning-time projects I usually do.</p>
+        <button class="pro"><a href="https://github.com/ArnoldEloiBM">View My Project</a></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact">
+    <h2 class="title">Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <div class="error-message" id="name-error"></div>
+        </div>
+        <div class="form-group">
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <div class="error-message" id="phone-error"></div>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <div class="error-message" id="message-error"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="contact-info">
+        <p><strong>Instagram:</strong> muvunyi_28</p>
+        <p><strong>Email:</strong> eloibuyange@gmail.com</p>
+        <p><strong>Phone:</strong> +250 790 703 759</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arnold-eloi-buyange-muvunyi-41a29b287/">Arnold Eloi Buyange Muvunyi</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ArnoldEloiBM">ArnoldEloiBM</a></p>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Arnold Eloi Buyange Muvunyi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

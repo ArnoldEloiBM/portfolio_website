@@ -1,0 +1,124 @@
+/* Big screen like laptops, tablet and desktops */
+@media (max-width: 1024px) {
+  .first-class,
+  .skills,
+  .education {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 10px;
+  }
+  .skills-box,
+  .education-blocks {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 10px;
+  }
+  .card-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+/* Large smartphones screens and portrait form of tablets */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    margin-right: 0;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #03cfd6;
+  }
+  .typed-text {
+    font-size: 1.5rem;
+    color: #03cfd6;
+  }
+  .background  {
+    background: url(images/image1.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+  }
+  .skills h2,
+  .education h2,
+  .title {
+    font-size: 2rem;
+  }
+  section {
+    padding: 30px 10px;
+  }
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 60vh;
+    background: #2c2f36;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    transition: 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+  }
+}
+
+/* iPhone and other android phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .skills-box,
+  .education-blocks {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5px;
+  }
+  .card {
+    padding: 10px;
+  }
+  .footer {
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  .section-divider {
+    margin: 30px 0;
+  }
+  form {
+    padding: 0 5px;
+  }
+}
